@@ -2,6 +2,7 @@ import React from "react";
 import { MISSION } from "../constants";
 import mission from "../assets/mission.mp4";
 import missionImg from "../assets/mission.jpeg";
+import { motion } from "framer-motion";
 
 function Mission() {
   return (
@@ -22,9 +23,15 @@ function Mission() {
             <source src={mission} type="video/mp4" />
           </video>
           <div className="absolute w-full h-full bg-black/40 rounded-3xl"></div>
-          <p className="absolute max-w-lg tracking-tighter lg:text-3xl">
+          <motion.p
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="absolute max-w-lg tracking-tighter lg:text-3xl"
+          >
             {MISSION}
-          </p>
+          </motion.p>
         </div>
       </div>
     </section>
