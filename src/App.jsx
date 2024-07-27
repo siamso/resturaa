@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <main>
+      <main className="antialiased">
         <Hero />
         <Dishes />
         <About />
