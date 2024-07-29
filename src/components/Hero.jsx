@@ -1,5 +1,5 @@
 import React from "react";
-import hero from "../assets/hero.mp4";
+import Salt from "../assets/Salt.mp4";
 import { motion } from "framer-motion";
 
 function Hero() {
@@ -8,7 +8,7 @@ function Hero() {
       <div className="absolute inset-0 w-full h-full overflow-hidden -z-20">
         <video
           className="object-cover w-full h-full"
-          src={hero}
+          src={Salt}
           autoPlay
           muted
           loop
